@@ -3,6 +3,8 @@ package com.neo.ticket.testsupport;
 import com.neo.ticket.eventcatalog.domain.Event;
 import com.neo.ticket.eventcatalog.domain.valueobject.EventId;
 import com.neo.ticket.eventcatalog.domain.valueobject.EventSchedule;
+import com.neo.ticket.reservation.domain.Reservation;
+import com.neo.ticket.reservation.domain.valueobject.ReservationId;
 import com.neo.ticket.shared.domain.valueobject.Actor;
 import com.neo.ticket.shared.domain.valueobject.Role;
 import com.neo.ticket.shared.domain.valueobject.UserId;
@@ -51,5 +53,11 @@ public final class TestFixtures {
         event.publish(organizer(ownerId), NOW);
         event.drainDomainEvents();
         return event;
+    }
+
+    public static Reservation pendingReservation(EventId eventId, UserId userId, int seats) {
+        Reservation reservation = Reservation.place(ReservationId.newId(), eventId, userId, seats, NOW);
+        reservation.drainDomainEvents();
+        return reservation;
     }
 }
