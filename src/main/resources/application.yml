@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: neo-ticket-service
+
+server:
+  port: 8080
