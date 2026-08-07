@@ -1,9 +1,8 @@
 package com.neo.ticket.iam.infrastructure.security;
 
 import com.neo.ticket.shared.domain.Invariants;
-import org.springframework.boot.context.properties.ConfigurationProperties;
-
 import java.time.Duration;
+import org.springframework.boot.context.properties.ConfigurationProperties;
 
 @ConfigurationProperties(prefix = "neo.security.jwt")
 public record JwtProperties(String secret, String issuer,

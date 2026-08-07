@@ -16,6 +16,8 @@ public final class TestFixtures {
 
     public static final Instant NOW = Instant.parse("2026-06-01T10:00:00Z");
 
+    public static final Clock FIXED_CLOCK = Clock.fixed(NOW, ZoneOffset.UTC);
+
     private TestFixtures() {
     }
 
@@ -50,5 +52,4 @@ public final class TestFixtures {
         event.drainDomainEvents();
         return event;
     }
-
 }
