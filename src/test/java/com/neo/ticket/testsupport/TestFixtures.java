@@ -6,7 +6,9 @@ import com.neo.ticket.eventcatalog.domain.valueobject.EventSchedule;
 import com.neo.ticket.shared.domain.valueobject.Actor;
 import com.neo.ticket.shared.domain.valueobject.Role;
 import com.neo.ticket.shared.domain.valueobject.UserId;
+import java.time.Clock;
 import java.time.Instant;
+import java.time.ZoneOffset;
 import java.time.temporal.ChronoUnit;
 import java.util.Set;
 
@@ -17,8 +19,16 @@ public final class TestFixtures {
     private TestFixtures() {
     }
 
+    public static Clock clockAt(Instant instant) {
+        return Clock.fixed(instant, ZoneOffset.UTC);
+    }
+
     public static Actor organizer(UserId userId) {
         return new Actor(userId, Set.of(Role.ORGANIZER));
+    }
+
+    public static Actor customer(UserId userId) {
+        return new Actor(userId, Set.of(Role.CUSTOMER));
     }
 
     public static Actor admin() {
