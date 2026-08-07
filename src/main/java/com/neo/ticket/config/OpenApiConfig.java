@@ -16,10 +16,10 @@ class OpenApiConfig {
     private static final String BEARER_SCHEME = "bearerAuth";
 
     @Bean
-    OpenAPI neoTickerOpenApi() {
+    OpenAPI neoTicketOpenApi() {
         return new OpenAPI()
                 .info(new Info()
-                        .title("Neo Ticker Service")
+                        .title("Neo Ticket Service")
                         .description("""
                                 Secure ticketing and reservation API.
 
@@ -29,7 +29,7 @@ class OpenApiConfig {
                                 `Idempotency-Key` header so a retried request cannot
                                 book the same seats twice.""")
                         .version("1.0.0")
-                        .contact(new Contact().name("Neo Ticker Team"))
+                        .contact(new Contact().name("Neo Ticket Team"))
                         .license(new License().name("Proprietary")))
                 .components(new Components().addSecuritySchemes(BEARER_SCHEME,
                         new SecurityScheme()

@@ -11,7 +11,7 @@ public record JwtProperties(String secret, String issuer,
     public static final int MIN_SECRET_LENGTH = 32;
 
     public static final String DEVELOPMENT_SECRET =
-            "dev-only-neo-ticker-secret-change-me-before-deploying";
+            "dev-only-neo-ticket-secret-change-me-before-deploying";
 
     public JwtProperties {
         Invariants.requirePresent(secret, "neo.security.jwt.secret");
