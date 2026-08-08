@@ -45,9 +45,7 @@ unit-test:
   image: $MAVEN_IMAGE
   needs: ["build"]
   script:
-    - >
-      mvn $MAVEN_CLI_OPTS test
-      -Dtest='!ApiFlowIntegrationTest,!RateLimitIntegrationTest,!AuditTrailIntegrationTest,!IdempotencyConcurrencyTest,!OverbookingConcurrencyTest'
+    - mvn $MAVEN_CLI_OPTS test -DexcludedGroups=integration
   artifacts:
     when: always
     reports:
@@ -60,9 +58,7 @@ integration-test:
   image: $MAVEN_IMAGE
   needs: ["build"]
   script:
-    - >
-      mvn $MAVEN_CLI_OPTS test
-      -Dtest='ApiFlowIntegrationTest,RateLimitIntegrationTest,AuditTrailIntegrationTest,IdempotencyConcurrencyTest,OverbookingConcurrencyTest'
+    - mvn $MAVEN_CLI_OPTS test -Dgroups=integration
   artifacts:
     when: always
     reports:
