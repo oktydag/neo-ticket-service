@@ -1,0 +1,32 @@
+# Build output
+target/
+
+# Version control
+.git/
+.gitignore
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.settings/
+.classpath
+.project
+.factorypath
+
+# OS
+.DS_Store
+
+# Docker itself
+Dockerfile
+.dockerignore
+
+# Logs and crash dumps
+*.log
+hs_err_pid*
+replay_pid*
+
+# Docs
+README.md
