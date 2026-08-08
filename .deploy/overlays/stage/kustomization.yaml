@@ -1,0 +1,18 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: neo-ticket-stage
+
+resources:
+  - ../../base
+  - namespace.yaml
+  - ingress.yaml
+
+patches:
+  - path: deployment-patch.yaml
+  - path: configmap-patch.yaml
+  - path: secret-patch.yaml
+
+images:
+  - name: REPLACE_WITH_REGISTRY/neo-ticket-service
+    newTag: stage-latest

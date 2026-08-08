@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: neo-ticket-service-config
+  labels:
+    app.kubernetes.io/name: neo-ticket-service
+data:
+  SPRING_PROFILES_ACTIVE: "postgres"
+  LOGGING_LEVEL_COM_NEO_TICKET: "INFO"
+  NEO_CLIENT_ADDRESS_TRUST_FORWARDED_HEADERS: "true"
+  NEO_SECURITY_JWT_ISSUER: "https://neo.example/ticket"

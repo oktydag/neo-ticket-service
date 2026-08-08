@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: neo-ticket-service
+spec:
+  replicas: 1
+  template:
+    spec:
+      containers:
+        - name: neo-ticket-service
+          resources:
+            requests:
+              cpu: 200m
+              memory: 384Mi
+            limits:
+              cpu: 500m
+              memory: 512Mi

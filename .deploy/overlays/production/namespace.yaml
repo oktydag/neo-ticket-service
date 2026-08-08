@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: neo-ticket-production
+  labels:
+    app.kubernetes.io/name: neo-ticket-service
+    environment: production

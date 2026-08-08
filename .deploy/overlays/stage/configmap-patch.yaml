@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: neo-ticket-service-config
+data:
+  LOGGING_LEVEL_COM_NEO_TICKET: "DEBUG"
+  NEO_SECURITY_JWT_ISSUER: "https://stage.neo.example/ticket"

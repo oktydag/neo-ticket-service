@@ -1,0 +1,19 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: neo-ticket-production
+
+resources:
+  - ../../base
+  - namespace.yaml
+  - ingress.yaml
+  - hpa.yaml
+
+patches:
+  - path: deployment-patch.yaml
+  - path: secret-patch.yaml
+
+images:
+  # change also here to real registry
+  - name: REPLACE_WITH_REGISTRY/neo-ticket-service
+    newTag: v0.0.1
