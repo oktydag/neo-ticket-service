@@ -72,7 +72,7 @@ integration-test:
     - mkdir -p ~/.kube
     - echo "$KUBECONFIG_CONTENT" | base64 -d > ~/.kube/config
     - cd .deploy/overlays/$ENVIRONMENT_NAME
-    - kustomize edit set image REPLACE_WITH_REGISTRY/neo-ticket-service="$IMAGE"
+    - kustomize edit set image registry.example.com/neo-ticket-service="$IMAGE"
     - kubectl apply -k .
     - kubectl rollout status deployment/neo-ticket-service -n neo-ticket-$ENVIRONMENT_NAME --timeout=180s
 

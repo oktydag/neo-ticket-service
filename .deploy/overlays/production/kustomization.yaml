@@ -15,5 +15,5 @@ patches:
 
 images:
   # change also here to real registry
-  - name: REPLACE_WITH_REGISTRY/neo-ticket-service
+  - name: registry.example.com/neo-ticket-service
     newTag: v0.0.1

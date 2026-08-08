@@ -30,7 +30,7 @@ spec:
       containers:
         - name: neo-ticket-service
           # for real sample, change it
-          image: REPLACE_WITH_REGISTRY/neo-ticket-service:latest
+          image: registry.example.com/neo-ticket-service:latest
           imagePullPolicy: IfNotPresent
           ports:
             - name: http

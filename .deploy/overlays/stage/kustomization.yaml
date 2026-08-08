@@ -14,5 +14,5 @@ patches:
   - path: secret-patch.yaml
 
 images:
-  - name: REPLACE_WITH_REGISTRY/neo-ticket-service
+  - name: registry.example.com/neo-ticket-service
     newTag: stage-latest
