@@ -263,3 +263,19 @@ exposed at `/actuator/prometheus` and restricted to `ADMIN`.
 No Redis, no Kafka, no separate read store, no event sourcing, and no microservice split. Each of
 these is recorded as a rejected alternative in the ADRs, or as an open RFC with the trigger that
 would justify it.
+
+## AI-Assisted Development
+
+AI coding tools were used throughout the development of this project as an
+engineering assistant.
+
+AI was primarily used for:
+
+- Reviewing unit, integration and concurrency test scenarios
+- Identifying potential edge cases and concurrency issues
+- Assisting with refactoring and repetitive implementation work
+- Reviewing code for potential bugs and over-engineering
+- Preparing architecture diagrams and reviewing architectural documents
+
+The goal was to use AI to improve development speed and exploration while
+keeping technical ownership.
