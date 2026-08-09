@@ -264,6 +264,8 @@ No Redis, no Kafka, no separate read store, no event sourcing, and no microservi
 these is recorded as a rejected alternative in the ADRs, or as an open RFC with the trigger that
 would justify it.
 
+---
+
 ## AI-Assisted Development
 
 AI coding tools were used throughout the development of this project as an
