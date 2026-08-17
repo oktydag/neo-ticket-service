@@ -28,7 +28,7 @@ Example:
 ```json
 {
   "status": 409,
-  "code": "EVENT_CAPACITY_EXCEEDED",
+  "code": "INSUFFICIENT_CAPACITY",
   "detail": "..."
 }
 ```
@@ -42,7 +42,6 @@ Used for general categories:
 - 403 → not allowed
 - 404 → not found
 - 409 → conflict
-- 422 → validation/business rule error
 - 429 → too many requests
 - 500 → server error
 
