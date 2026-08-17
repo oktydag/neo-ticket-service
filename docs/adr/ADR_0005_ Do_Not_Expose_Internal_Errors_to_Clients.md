@@ -1,4 +1,4 @@
-# ADR 0006: Do Not Expose Internal Errors to Clients
+# ADR 0005: Do Not Expose Internal Errors to Clients
 
 **Status:** Accepted
 

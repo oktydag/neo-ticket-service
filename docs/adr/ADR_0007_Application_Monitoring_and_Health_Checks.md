@@ -1,4 +1,4 @@
-# ADR 0008: Application Monitoring and Health Checks
+# ADR 0007: Application Monitoring and Health Checks
 
 **Status:** Accepted
 

@@ -1,4 +1,4 @@
-# ADR 0002: Using DDD and Lightweight CQRS
+# ADR 0001: Using DDD and Lightweight CQRS
 
 **Status:** Accepted
 

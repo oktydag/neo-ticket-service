@@ -1,4 +1,4 @@
-# ADR 0005: HTTP Status and Application Error Codes
+# ADR 0004: HTTP Status and Application Error Codes
 
 **Status:** Accepted
 
@@ -90,5 +90,3 @@ Rejected because it is too generic and cannot describe specific business errors.
 ### Only error message
 
 Rejected because messages are not stable and can change anytime.
-
-İstersen bunu daha da “1 sayfalık internal guideline” seviyesine de indirebilirim.

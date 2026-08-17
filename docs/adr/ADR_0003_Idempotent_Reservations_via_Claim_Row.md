@@ -1,4 +1,4 @@
-# ADR 0002: Idempotent Reservations via a Claim Row
+# ADR 0003: Idempotent Reservations via a Claim Row
 
 **Status:** Accepted
 

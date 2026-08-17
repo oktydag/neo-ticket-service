@@ -1,4 +1,4 @@
-# ADR 0007: Audit Logging via Domain Events
+# ADR 0006: Audit Logging via Domain Events
 
 **Status:** Accepted
 

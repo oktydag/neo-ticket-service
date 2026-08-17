@@ -40,8 +40,6 @@ Entity
  └── version
 ```
 
-When two transactions attempt to update the same entity, the first successful update increments the version. A stale transaction fails with an optimistic locking conflict instead of silently overwriting the newer state.
-
 ## Why Both?
 
 The strategies solve different concurrency problems:
